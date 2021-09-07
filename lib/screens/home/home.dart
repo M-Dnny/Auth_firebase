@@ -15,8 +15,36 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              margin: EdgeInsets.symmetric(horizontal: 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blue[200],
+              ),
+              child: Text(
+                'Follow for more helpful and Informative Content',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(height: 50),
             ElevatedButton(
-              child: Text('LogOut'),
+              child: Text(
+                'LogOut from Guest Account',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                elevation: 5,
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
+              ),
               onPressed: () async {
                 await _auth.signOut();
                 print('Sign Out Successfully');
