@@ -17,12 +17,29 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
-        title: Text('Sign In'),
+        title: Text('Firebase Sign In'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              padding: EdgeInsets.symmetric(vertical: 20),
+              margin: EdgeInsets.symmetric(horizontal: 10),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: Colors.blue[200],
+              ),
+              child: Text(
+                'Flutter + Firebase for Anonymous Login',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            SizedBox(height: 50),
             ElevatedButton(
               onPressed: () async {
                 dynamic result = await _auth.signInAno();
@@ -33,7 +50,18 @@ class _SignInState extends State<SignIn> {
                   print(result.uid);
                 }
               },
-              child: Text('Sign In with Guest Account'),
+              child: Text(
+                'Sign In with Guest Account',
+                style: TextStyle(
+                  fontSize: 18,
+                ),
+              ),
+              style: ElevatedButton.styleFrom(
+                elevation: 5,
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 20),
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(15)),
+              ),
             ),
           ],
         ),
