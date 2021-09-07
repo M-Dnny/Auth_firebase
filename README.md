@@ -1,16 +1,12 @@
 # auth_firebase
 
-A new Flutter project.
+A new Flutter + Firebase Project 
 
-## Getting Started
+<h1>This projects is in Flutter NullSafety with Firebase</h1>
 
-This project is a starting point for a Flutter application.
+</h2>Here I'll be working on Firebase Authentications and create a seprate branch for every different auth.
 
-A few resources to get you started if this is your first Flutter project:
+Rn Anonymous Branch is been created.
+  </h2>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<h1>Follow me on my Instagram: https://www.instagram.com/dnny.dev/
