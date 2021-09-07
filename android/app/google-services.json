@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537569052526",
+    "project_id": "loginauth-example",
+    "storage_bucket": "loginauth-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537569052526:android:73b94132d52325054d237f",
+        "android_client_info": {
+          "package_name": "com.example.auth_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537569052526-86j7p93qokl561i7onakci19ldm42adc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmd6-N2x7-rHtVdznmOj4A59Oz80XEoS8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537569052526-86j7p93qokl561i7onakci19ldm42adc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
