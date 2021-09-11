@@ -34,7 +34,7 @@ class Home extends StatelessWidget {
             SizedBox(height: 50),
             ElevatedButton(
               child: Text(
-                'LogOut from Guest Account',
+                'Log out from the Account',
                 style: TextStyle(
                   fontSize: 18,
                 ),
@@ -47,7 +47,6 @@ class Home extends StatelessWidget {
               ),
               onPressed: () async {
                 await _auth.signOut();
-                print('Sign Out Successfully');
               },
             )
           ],

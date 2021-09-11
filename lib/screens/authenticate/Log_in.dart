@@ -1,16 +1,16 @@
 import 'package:auth_firebase/services/auth.dart';
 import 'package:flutter/material.dart';
 
-class SignIn extends StatefulWidget {
-  const SignIn({required this.toggleView});
+class LogIn extends StatefulWidget {
+  const LogIn({required this.toggleView});
   final Function toggleView;
 
   @override
-  _SignInState createState() => _SignInState();
+  _LogInState createState() => _LogInState();
 }
 
-class _SignInState extends State<SignIn> {
-  final AuthService _auth = AuthService();
+class _LogInState extends State<LogIn> {
+  AuthService _auth = AuthService();
   final _formkey = GlobalKey<FormState>();
 
   //TextField State
@@ -25,7 +25,7 @@ class _SignInState extends State<SignIn> {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         elevation: 0.0,
-        title: Text('Sign In'),
+        title: Text('Login'),
       ),
       body: Container(
         padding: EdgeInsets.symmetric(vertical: 20, horizontal: 50),
@@ -72,7 +72,7 @@ class _SignInState extends State<SignIn> {
                   }
                 },
                 child: Text(
-                  'Sign In',
+                  'Login',
                   style: TextStyle(
                     fontSize: 18,
                   ),
@@ -88,7 +88,7 @@ class _SignInState extends State<SignIn> {
                 onPressed: () {
                   widget.toggleView();
                 },
-                child: Text("Don't have an account? Login Now"),
+                child: Text("Already have an account? Sign In Now"),
               ),
               SizedBox(height: 20),
               Text(
